@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: Cam-Handler
+Version: 1.0
+Summary: A simple multithreaded camera stream capturer using opencv.
+Home-page: https://github.com/grebtsew/Cam_Handler
+Author: Grebtsew
+Author-email: daniel.grebtsew@gmail.com
+License: UNKNOWN
+Description: # Cam_Handler
+        A cam_handler pip package python3 for handling camera streams.
+        
+        # Install
+        Run the following command:
+        ```
+        pip install 
+        ```
+        
+        # Functions
+        
+        * create_instances( source_list ) - where source_list is a list containing list(address,name,viz) or just address. It return a list of all created threads.
+        * in thread Camera:
+        play()
+        pause()
+        run()
+        stop()
+        
+        Image can be recieved from Camera.frame!
+        
+        # Examples
+        
+        Start camera and show frames
+        ```
+        import time
+        
+        // three ways of adding camera to list (address,name,viz)
+        source_list = [0, "rtsp://username:password@ip:port/path", (0,0,True)]
+        
+        // Create instances, var will contain list to all threads
+        var = create_instances(source_list)
+        
+        while True:
+            print(var[0].frame)
+            time.sleep(5)
+        ```
+        
+        Start camera only
+        ```
+        Camera( address = 0, name= 0, visualize = True).start()
+        ```
+        
+        # Other
+        This is my first made pip package!
+        Hope you enjoy it!
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

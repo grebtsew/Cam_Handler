@@ -1,0 +1,9 @@
+README.md
+setup.py
+CamHandler/CamHandler.py
+CamHandler/__init__.py
+CamHandler.egg-info/PKG-INFO
+CamHandler.egg-info/SOURCES.txt
+CamHandler.egg-info/dependency_links.txt
+CamHandler.egg-info/requires.txt
+CamHandler.egg-info/top_level.txt

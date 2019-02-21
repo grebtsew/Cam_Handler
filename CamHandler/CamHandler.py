@@ -9,7 +9,7 @@ def create_instances( source_list ):
     '''
     thread_list = list()
 
-    if(type(source_list) == type(list())):
+    if(type(source_list) == type(list()) or (type(source_list[i]) == type(tuple()))):
         amount = len(source_list)
         for i in range(0, amount):
             if (type(source_list[i]) == type(list()) or (type(source_list[i]) == type(tuple()))):
@@ -28,7 +28,7 @@ def create_instances( source_list ):
                 thread.start()
 
     elif source_list is not None:
-        thread = Camera(name = i, address=source_list)
+        thread = Camera(name = str(source_list), address=source_list)
         thread_list.append(thread)
         thread.start()
     else:
@@ -78,8 +78,8 @@ class Camera(Thread):
             ret, self.frame = self.cap.read()
 
             if self.visualize:
-                if frame is not None:
-                    cv2.imshow(self.name, frame)
+                if self.frame is not None:
+                    cv2.imshow(self.name, self.frame)
 
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 self.stop()

@@ -27,12 +27,14 @@ Image can be recieved from Camera.frame!
 Start camera and show frames
 ```
 import time
+from CamHandler import *
+
 
 // three ways of adding camera to list (address,name,viz)
 source_list = [0, "rtsp://username:password@ip:port/path", (0,0,True)]
 
 // Create instances, var will contain list to all threads
-var = create_instances(source_list)
+var = CamHandler.create_instances(source_list)
 
 while True:
     print(var[0].frame)

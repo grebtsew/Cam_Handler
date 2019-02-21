@@ -2,13 +2,16 @@ import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
-setuptools.setup(
 
-     name='Cam_Handler',
+    setuptools.setup(
+    #   Test
+     name='CamHandler',
 
      version='1.0',
 
-     scripts=['Cam_Handler.py'] ,
+     packages=['CamHandler'] ,
+
+     install_requires=['opencv-python'],
 
      author="Grebtsew",
 
@@ -18,11 +21,11 @@ setuptools.setup(
 
      long_description=long_description,
 
-   long_description_content_type="text/markdown",
+     long_description_content_type="text/markdown",
 
      url="https://github.com/grebtsew/Cam_Handler",
 
-     packages=setuptools.find_packages(),
+     #packages=setuptools.find_packages(),
 
      classifiers=[
 

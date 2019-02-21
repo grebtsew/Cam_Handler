@@ -1,5 +1,5 @@
 Metadata-Version: 2.1
-Name: Cam-Handler
+Name: CamHandler
 Version: 1.0
 Summary: A simple multithreaded camera stream capturer using opencv.
 Home-page: https://github.com/grebtsew/Cam_Handler
@@ -10,10 +10,14 @@ Description: # Cam_Handler
         A cam_handler pip package python3 for handling camera streams.
         
         # Install
-        Run the following command:
+        Download and run the following command in dist folder:
         ```
-        pip install 
+        pip install Cam_Handler-1.0-py3-none-any.whl
         ```
+        The reason i won't upload this package to PyPi is that it's only a test.
+        How to create your own pip packages?
+        Check this great tutorial:
+        https://dzone.com/articles/executable-package-pip-install
         
         # Functions
         

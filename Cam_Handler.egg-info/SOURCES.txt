@@ -1,7 +1,0 @@
-Cam_Handler.py
-README.md
-setup.py
-Cam_Handler.egg-info/PKG-INFO
-Cam_Handler.egg-info/SOURCES.txt
-Cam_Handler.egg-info/dependency_links.txt
-Cam_Handler.egg-info/top_level.txt

@@ -4,7 +4,7 @@ A cam_handler pip package python3 for handling camera streams.
 # Install
 Download and run the following command in dist folder:
 ```
-pip install Cam_Handler-1.0-py3-none-any.whl
+pip install CamHandler-1.0-py3-none-any.whl
 ```
 The reason i won't upload this package to PyPi is that it's only a test.
 How to create your own pip packages?
